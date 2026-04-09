@@ -290,7 +290,16 @@ body::after{
     font-size:24px;
     line-height:1.6;
   }
+.hero {
+  position: relative;
+}
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
   .landscape-grid{
     grid-template-columns:repeat(3,1fr);
   }
@@ -300,4 +309,8 @@ body::after{
   }
 .hero {
   background: url("scenic-1.jpg") no-repeat center center/cover;
+}
+.hero * {
+  position: relative;
+  z-index: 2;
 }
