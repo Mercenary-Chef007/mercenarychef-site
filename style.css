@@ -359,7 +359,8 @@ body::after{
   z-index: 2;
 }
 .hidden {
-  display: none;
+  display: none !important;
+
 }
 .hero {
   background: url("hero-12.jpg") no-repeat center center/cover;
