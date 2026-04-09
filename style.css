@@ -421,3 +421,28 @@ body::after{
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 9999;
+  padding: 24px;
+}
+
+.lightbox-img {
+  display: block;
+  max-width: 95%;
+  max-height: 85vh;
+  margin: 5vh auto 0;
+  border-radius: 12px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+}
