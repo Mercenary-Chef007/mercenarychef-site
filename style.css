@@ -361,3 +361,6 @@ body::after{
 .hidden {
   display: none;
 }
+.hero {
+  background: url("hero-12.jpg") no-repeat center center/cover;
+}
