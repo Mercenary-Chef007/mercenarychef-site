@@ -39,10 +39,11 @@ body::after{
 }
 
 .logo{
-  width:220px;
-  max-width:62vw;
-  margin:0 auto 18px;
+  width:320px;
+  max-width:80vw;
+  margin:0 auto 28px;
   display:block;
+
 }
 
 .brand{
