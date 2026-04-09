@@ -298,4 +298,6 @@ body::after{
   .landscape-card img{
     height:280px;
   }
+.hero {
+  background: url("scenic-1.jpg") no-repeat center center/cover;
 }
