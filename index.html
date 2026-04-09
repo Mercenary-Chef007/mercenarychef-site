@@ -40,30 +40,30 @@
 
   <div id="galleryGrid" class="gallery-grid hidden" style="display: none;">
 
-    <img src="dish-1.jpg" />
-    <img src="dish-2.jpg" />
-    <img src="dish-3.jpg" />
-    <img src="dish-4.jpg" />
-    <img src="dish-5.jpg" />
-    <img src="dish-6.jpg" />
-    <img src="dish-7.jpg" />
-    <img src="dish-8.jpg" />
-    <img src="dish-9.jpg" />
-    <img src="dish-10.jpg" />
-    <img src="dish-11.jpg" />
-    <img src="hero-12.jpg" />
-    <img src="dish-13.jpg" />
-    <img src="dish-14.jpg" />
-    <img src="dish-15.jpg" />
-    <img src="dish-16.jpg" />
-    <img src="dish-17.jpg" />
-    <img src="dish-18.jpg" />
-    <img src="dish-19.jpg" />
-    <img src="dish-20.jpg" />
-    <img src="dish-21.jpg" />
-    <img src="dish-22.jpg" />
-    <img src="dish-23.jpg" />
-    <img src="dish-24.jpg" />
+    <img src="dish-1.jpg" alt="Dish 1" onclick="openLightbox(this.src)" />
+<img src="dish-2.jpg" alt="Dish 2" onclick="openLightbox(this.src)" />
+<img src="dish-3.jpg" alt="Dish 3" onclick="openLightbox(this.src)" />
+<img src="dish-4.jpg" alt="Dish 4" onclick="openLightbox(this.src)" />
+<img src="dish-5.jpg" alt="Dish 5" onclick="openLightbox(this.src)" />
+<img src="dish-6.jpg" alt="Dish 6" onclick="openLightbox(this.src)" />
+<img src="dish-7.jpg" alt="Dish 7" onclick="openLightbox(this.src)" />
+<img src="dish-8.jpg" alt="Dish 8" onclick="openLightbox(this.src)" />
+<img src="dish-9.jpg" alt="Dish 9" onclick="openLightbox(this.src)" />
+<img src="dish-10.jpg" alt="Dish 10" onclick="openLightbox(this.src)" />
+<img src="dish-11.jpg" alt="Dish 11" onclick="openLightbox(this.src)" />
+<img src="hero-12.jpg" alt="Action shot" onclick="openLightbox(this.src)" />
+<img src="dish-13.jpg" alt="Dish 13" onclick="openLightbox(this.src)" />
+<img src="dish-14.jpg" alt="Dish 14" onclick="openLightbox(this.src)" />
+<img src="dish-15.jpg" alt="Dish 15" onclick="openLightbox(this.src)" />
+<img src="dish-16.jpg" alt="Dish 16" onclick="openLightbox(this.src)" />
+<img src="dish-17.jpg" alt="Dish 17" onclick="openLightbox(this.src)" />
+<img src="dish-18.jpg" alt="Dish 18" onclick="openLightbox(this.src)" />
+<img src="dish-19.jpg" alt="Dish 19" onclick="openLightbox(this.src)" />
+<img src="dish-20.jpg" alt="Dish 20" onclick="openLightbox(this.src)" />
+<img src="dish-21.jpg" alt="Dish 21" onclick="openLightbox(this.src)" />
+<img src="dish-22.jpg" alt="Dish 22" onclick="openLightbox(this.src)" />
+<img src="dish-23.jpg" alt="Dish 23" onclick="openLightbox(this.src)" />
+<img src="dish-24.jpg" alt="Dish 24" onclick="openLightbox(this.src)" />
 
   </div>
 </section>
@@ -183,7 +183,11 @@
 
   <footer class="footer">
     <p>© Mercenary Chef</p>
-  </footer>
+  </footer> 
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImg" class="lightbox-img" src="" alt="Expanded gallery image" />
+</div>
 <script>
 function toggleGallery() {
   const gallery = document.getElementById("galleryGrid");
