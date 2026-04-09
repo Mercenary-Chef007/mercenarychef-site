@@ -200,6 +200,16 @@ function toggleGallery() {
     gallery.style.display = "none";
     button.textContent = "View Gallery";
   }
+} 
+  function openLightbox(src) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  lightboxImg.src = src;
+  lightbox.style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
 }
 </script>
 </body>
