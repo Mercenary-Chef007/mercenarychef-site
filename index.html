@@ -184,6 +184,19 @@
   <footer class="footer">
     <p>© Mercenary Chef</p>
   </footer>
+<script>
+function toggleGallery() {
+  const gallery = document.getElementById("galleryGrid");
+  const button = document.getElementById("galleryButton");
 
+  if (gallery.classList.contains("hidden")) {
+    gallery.classList.remove("hidden");
+    button.textContent = "Hide Gallery";
+  } else {
+    gallery.classList.add("hidden");
+    button.textContent = "View Gallery";
+  }
+}
+</script>
 </body>
 </html>
