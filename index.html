@@ -69,8 +69,8 @@
 </section>
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="lightbox-close">&times;</span>
-  <img id="lightboxImg" class="lightbox-img" src="" alt="Expanded gallery image" />
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+<img id="lightboxImg" class="lightbox-img" src="" alt="Expanded gallery image" onclick="event.stopPropagation()" />
 </div>
 
 <section id="mission" class="panel">
